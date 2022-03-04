@@ -3,3 +3,81 @@
 .App {
   text-align: center;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  border: 1px solid green;
+}
+
+.logo {
+  border: 1px solid green;
+  height: 70px;
+  padding: 19px 20px;
+}
+
+.logo a {
+  font-size: 20px;
+  padding: 19px 20px;
+  text-transform: uppercase;
+}
+
+.leftMenu {
+  display: inline-block;
+  width: 350px;
+}
+
+.rightMenu {
+  display: inline-block;
+}
+
+.ant-menu-item {
+  margin: 0px 10px;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.barsMenu {
+  margin-right: 8px;
+  display: none;
+  height: 32px;
+  padding: 6px;
+}
+
+.barsBtn {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.barsBtn:after,
+.barsBtn:before {
+  content: attr(x);
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  background: white;
+}
+
+.barsBtn:after {
+  top: auto;
+  bottom: -6px;
+}
+
+@media (max-width: 767px) {
+  .barsMenu {
+    display: inline-block;
+  }
+
+  .rightMenu {
+    display: none;
+  }
+}

@@ -9,8 +9,20 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  background-color: @primary-color;
 `
 
+const LogoContainer = styled.div`
+  border: 1px solid green;
+  height: 70px;
+  padding: 19px 20px;
+`
+
+const Logo = styled.a`
+  font-size: 20px;
+  padding: 19px 20px;
+  text-transform: uppercase;
+`
 
 class Layout extends Component {
   constructor(props) {
@@ -27,10 +39,10 @@ class Layout extends Component {
 
   render() {
     return(
-      <Nav type="heading">
-        <div className="logo">
-          <a type="heading" href="">Logo</a>
-        </div>
+      <Nav>
+        <LogoContainer className="logo">
+          <Logo className="logo-link" href="/">Logo</Logo>
+        </LogoContainer>
           <div className="leftMenu">
             <LeftMenu />
           </div>

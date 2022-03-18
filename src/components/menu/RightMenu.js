@@ -4,7 +4,7 @@ import { Menu } from 'antd';
 class RightMenu extends Component {
   render() {
     return (
-      <Menu mode="horizontal">
+      <Menu mode="vertical">
         <Menu.Item key="mail">
           Log In
         </Menu.Item>

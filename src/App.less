@@ -4,14 +4,6 @@
   text-align: center;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  border: 1px solid green;
-}
-
 .logo {
   border: 1px solid green;
   height: 70px;
@@ -25,8 +17,8 @@ nav {
 }
 
 .leftMenu {
-  display: inline-block;
   width: 350px;
+  display: inline-block;
 }
 
 .rightMenu {
@@ -75,6 +67,10 @@ nav {
 @media (max-width: 767px) {
   .barsMenu {
     display: inline-block;
+  }
+
+  .leftMenu {
+    display: none;
   }
 
   .rightMenu {

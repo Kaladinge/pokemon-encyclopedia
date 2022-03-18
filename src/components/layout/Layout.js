@@ -4,6 +4,12 @@ import RightMenu from '../menu/RightMenu'
 import { Drawer, Button } from 'antd';
 import styled from 'styled-components';
 
+const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+`
 
 
 class Layout extends Component {
@@ -21,9 +27,9 @@ class Layout extends Component {
 
   render() {
     return(
-      <nav>
+      <Nav type="heading">
         <div className="logo">
-          <a href="">Logo</a>
+          <a type="heading" href="">Logo</a>
         </div>
           <div className="leftMenu">
             <LeftMenu />
@@ -31,7 +37,7 @@ class Layout extends Component {
           <div className="rightMenu">
             <RightMenu />
           </div>
-            <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
+            <Button className="barsMenu" type="heading" onClick={this.showDrawer}>
               <span className="barsBtn"></span>
             </Button>
             <Drawer 
@@ -43,7 +49,7 @@ class Layout extends Component {
               <LeftMenu/>
               <RightMenu />
             </Drawer>
-      </nav>
+      </Nav>
     )
   }
 }
